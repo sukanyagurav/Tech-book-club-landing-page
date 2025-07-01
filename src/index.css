@@ -75,5 +75,5 @@ p{
   height: 50%;
   top: 0;
   right: -45px;
-  @apply content-[''] md:content-[url('./assets/images/pattern-arrow.svg')];
+  @apply content-[''] md:content-[url('/assets/images/pattern-arrow.svg')];
 }
