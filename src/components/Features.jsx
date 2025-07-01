@@ -23,7 +23,7 @@ const Features = () => {
           />
         </picture>
         <div className="md:ml-auto md:w-[400px]">
-          <h2 className="text-[3rem] font-bold leading-none">Read together,<br/> grow together</h2>
+          <h2 className="subHeading">Read together,<br/> grow together</h2>
           <ul className="mt-8 text-lg checkboxes">
             <li>Monthly curated tech reads selected by industry experts</li>
             <li>Virtual and in-person meetups for deep-dive discussions</li>
@@ -35,7 +35,7 @@ const Features = () => {
       <div className="flex flex-col md:flex-row gap-10 justify-between  md:items-center mt-32 relative">
     
         <div className=" ">
-          <h2 className="text-[3rem] font-bold   heading ">Not your average <br/> book <span className="circle relative inline-block">club</span></h2>
+          <h2 className="subHeading ">Not your average <br/> book <span className="circle relative inline-block">club</span></h2>
           <p className="mt-8 text-xl md:max-w-[480px]">Connect with a community that speaks your language - from <span className="font-bold">Python</span> to <span className="font-bold">TypeScript</span> and everything in between. Our discussions blend technical depth with practical applications.</p>
       
         </div>

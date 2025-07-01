@@ -1,12 +1,13 @@
 import React from 'react';
 import Button from './UI/Button';
 import Stars from './UI/Stars';
+import UserRating from './UserRating';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-8 justify-between items-center max-w-[1200px] mx-auto">
-      <div className="flex-0.6 p-4 ">
-        <h1 className="text-6xl font-bold">
+    <div className="flex flex-col md:flex-row gap-8 justify-between items-center">
+      <div className="flex-0.6 ">
+        <h1 className="heading">
           Join the <br /> ultimate tech <br /> book club
         </h1>
         <p className="text-xl mt-4  max-w-[550px] mb-8">
@@ -14,24 +15,16 @@ const Hero = () => {
           enthusiasts. Get curated recommendations, join vibrant discussions,
           and level up your skills one chapter at a time.
         </p>
-        <Button classes={'flex  gap-2 items-center'}>
-          <span>Review Membership options</span>
-          <img
-            src="assets/images/icon-arrow-down.svg"
-            alt="arrow"
-          />
-        </Button>
-        <div className="flex gap-4 mt-8 self-start">
-          <img
-            src="./assets/images/image-avatars.webp"
-            className="w-[140px] object-contain"
-          />
-
-          <div>
-            <Stars />
-            <p>200+ developers joined already</p>
-          </div>
-        </div>
+        <a href="#membership">
+          <Button classes={'flex  gap-2 items-center'}>
+            <span>Review Membership options</span>
+            <img
+              src="assets/images/icon-arrow-down.svg"
+              alt="arrow"
+            />
+          </Button>
+        </a>
+        <UserRating />
       </div>
       <picture>
         <source
@@ -50,7 +43,7 @@ const Hero = () => {
         <img
           src="assets/images/image-hero-mobile.webp"
           aria-hidden="true"
-          className="h-[600px] rounded-md"
+          className="h-[600px] rounded-2xl"
         />
       </picture>
     </div>

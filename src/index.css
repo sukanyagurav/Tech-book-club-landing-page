@@ -2,13 +2,50 @@
 
 @theme {
   --breakpoint-md: 850px;
+  --color-dark: #18353f;
+  --Martian-Mono: 'Martian Mono', serif;
+  --inter: 'Inter', serif;
+}
+button{
+  font-family: inherit;
+}
+body{
+   font-family:var(--inter);
+}
+html {
+  scroll-behavior: smooth;
 }
 @utility heading {
-  word-spacing: 0.7rem;
-  line-height: 1.2em;
+  font-family:var(--Martian-Mono);
+  @apply text-4xl leading-14 md:text-[3rem] font-bold md:leading-18;
 }
-.lightsalmongradient{
-  background-image:linear-gradient(133deg, #fff5ef 34%, rgba(143, 184, 186, 0.564) 100%);
+@utility subHeading{
+  font-size:2rem;
+  font-family:var(--Martian-Mono);
+  @apply text-4xl font-semibold leading-14;
+}
+p{
+  @apply leading-8;
+}
+.lightsalmongradient {
+  background-image: linear-gradient(
+    133deg,
+    #fff5ef 34%,
+    rgba(143, 184, 186, 0.564) 100%
+  );
+}
+.bg {
+  background-image: url(./assets/images/pattern-light-bg.svg),
+    linear-gradient(133deg, #fff5ef 34%, #fff5ef 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+.bg2 {
+  background-image: url(./assets/images/pattern-dark-bg.svg),
+    linear-gradient(133deg, #062630, #062630);
+  background-size: cover;
+  background-position: center;
 }
 .checkboxes li {
   margin-bottom: 1.6rem;
@@ -26,8 +63,8 @@
 .circle::before {
   content: url('./assets/images/pattern-circle.png');
   position: absolute;
-  width: 50%;
-  height: 50%;
+  width:80px;
+  height: 80px;
   top: 0;
   left: -20px;
 }
