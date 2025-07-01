@@ -43,7 +43,7 @@ const Hero = () => {
         <img
           src="assets/images/image-hero-mobile.webp"
           aria-hidden="true"
-          className="h-[600px] rounded-2xl"
+          className="md:h-[600px] rounded-2xl"
         />
       </picture>
     </div>

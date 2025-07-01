@@ -35,14 +35,14 @@ p{
   );
 }
 .bg {
-  background-image: url(./assets/images/pattern-light-bg.svg),
+  background-image: url(/assets/images/pattern-light-bg.svg),
     linear-gradient(133deg, #fff5ef 34%, #fff5ef 100%);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
 }
 .bg2 {
-  background-image: url(./assets/images/pattern-dark-bg.svg),
+  background-image: url(/assets/images/pattern-dark-bg.svg),
     linear-gradient(133deg, #062630, #062630);
   background-size: cover;
   background-position: center;
