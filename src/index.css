@@ -1,1 +1,42 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-md: 850px;
+}
+@utility heading {
+  word-spacing: 0.7rem;
+  line-height: 1.2em;
+}
+.lightsalmongradient{
+  background-image:linear-gradient(133deg, #fff5ef 34%, rgba(143, 184, 186, 0.564) 100%);
+}
+.checkboxes li {
+  margin-bottom: 1.6rem;
+  padding-left: 2.4rem;
+  position: relative;
+}
+.checkboxes li::before {
+  content: url('./assets/images/icon-check.svg');
+  position: absolute;
+  right: 0.2rem;
+  width: 100%;
+  height: 100%;
+  top: 6px;
+}
+.circle::before {
+  content: url('./assets/images/pattern-circle.png');
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: -20px;
+}
+
+.journey:not(:last-of-type)::after {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  right: -45px;
+  @apply content-[''] md:content-[url('./assets/images/pattern-arrow.svg')];
+}

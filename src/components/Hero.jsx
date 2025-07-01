@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from './Button';
+import Button from './UI/Button';
+import Stars from './UI/Stars';
 
 const Hero = () => {
   return (
@@ -8,32 +9,26 @@ const Hero = () => {
         <h1 className="text-6xl font-bold">
           Join the <br /> ultimate tech <br /> book club
         </h1>
-        <p className="text-lg mt-4  max-w-[550px]">
+        <p className="text-xl mt-4  max-w-[550px] mb-8">
           Turn your reading time into learning time with fellow tech
           enthusiasts. Get curated recommendations, join vibrant discussions,
           and level up your skills one chapter at a time.
         </p>
-        <Button>
+        <Button classes={'flex  gap-2 items-center'}>
           <span>Review Membership options</span>
           <img
-            src="./assets/images/arrow.svg"
+            src="assets/images/icon-arrow-down.svg"
             alt="arrow"
           />
         </Button>
-        <div className="flex gap-4 mt-8">
+        <div className="flex gap-4 mt-8 self-start">
           <img
             src="./assets/images/image-avatars.webp"
-            className="w-[140px]"
+            className="w-[140px] object-contain"
           />
 
           <div>
-            <div className="flex gap-1">
-              <img src="./assets/images/icon-star.svg" />
-              <img src="./assets/images/icon-star.svg" />
-              <img src="./assets/images/icon-star.svg" />
-              <img src="./assets/images/icon-star.svg" />
-              <img src="./assets/images/icon-star.svg" />
-            </div>
+            <Stars />
             <p>200+ developers joined already</p>
           </div>
         </div>
