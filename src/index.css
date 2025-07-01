@@ -35,14 +35,14 @@ p{
   );
 }
 .bg {
-  background-image: url(/assets/images/pattern-light-bg.svg),
+  background-image: url('/assets/images/pattern-light-bg.svg'),
     linear-gradient(133deg, #fff5ef 34%, #fff5ef 100%);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
 }
 .bg2 {
-  background-image: url(/assets/images/pattern-dark-bg.svg),
+  background-image: url('/assets/images/pattern-dark-bg.svg'),
     linear-gradient(133deg, #062630, #062630);
   background-size: cover;
   background-position: center;
@@ -53,7 +53,7 @@ p{
   position: relative;
 }
 .checkboxes li::before {
-  content: url('./assets/images/icon-check.svg');
+  content: url('/assets/images/icon-check.svg');
   position: absolute;
   right: 0.2rem;
   width: 100%;
@@ -61,7 +61,7 @@ p{
   top: 6px;
 }
 .circle::before {
-  content: url('./assets/images/pattern-circle.png');
+  content: url('/assets/images/pattern-circle.png');
   position: absolute;
   width:80px;
   height: 80px;
