@@ -7,16 +7,16 @@ const Card = ({membership}) => {
             <p className="py-4 border-b-2">
               {membership.priceType == 'month' ? (
                 <>
-                  <span className="font-bold text-2xl  inline-block">
+                  <span className="font-bold text-4xl  inline-block">
                     ${membership.price}
                   </span>
-                  /{membership.priceType}
+                   / {membership.priceType}
                 </>
               ) : (
-                <span className='font-bold text-2xl'>{membership.priceType}</span>
+                <span className='font-bold text-4xl'>{membership.priceType}</span>
               )}
             </p>
-            <ul className="my-8 text-xl ">
+            <ul className="my-8 text-lg ">
               {membership.features.map((feature) => (
                 <li
                   key={feature.id}

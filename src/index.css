@@ -4,7 +4,10 @@
   --breakpoint-md: 850px;
   --color-dark: #18353f;
   --Martian-Mono: 'Martian Mono', serif;
+  --color-gradient-1:#d07741;
+  --color-gradient-2:#062630;
   --inter: 'Inter', serif;
+  --color-salmon-100:#ff9a60 ;
 }
 button{
   font-family: inherit;
@@ -17,7 +20,7 @@ html {
 }
 @utility heading {
   font-family:var(--Martian-Mono);
-  @apply text-4xl leading-14 md:text-[3rem] font-bold md:leading-18;
+  @apply text-4xl leading-14 md:text-[3rem] font-bold md:leading-18 bg-clip-text text-transparent bg-gradient-to-r from-gradient-1 to-gradient-2;
 }
 @utility subHeading{
   font-size:2rem;
@@ -77,3 +80,16 @@ p{
   right: -45px;
   @apply content-[''] md:content-[url('/assets/images/pattern-arrow.svg')];
 }
+
+
+
+button {
+  @apply  outline-[0.05rem] border-[3px] transition-all duration-300;
+}
+
+button:hover,
+button:focus-visible{
+
+  @apply border-salmon-100 border-[3px]   outline-salmon-100 outline-offset-[.4em] text-white bg-salmon-100;
+}
+
