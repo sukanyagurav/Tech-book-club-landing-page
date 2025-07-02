@@ -16,7 +16,7 @@ const Hero = () => {
           and level up your skills one chapter at a time.
         </p>
         <a href="#membership">
-          <Button classes={'flex  gap-2 items-center'}>
+          <Button classes={'flex  gap-2 items-center dark'}>
             <span>Review Membership options</span>
             <img
               src="assets/images/icon-arrow-down.svg"

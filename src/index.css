@@ -4,37 +4,37 @@
   --breakpoint-md: 850px;
   --color-dark: #18353f;
   --Martian-Mono: 'Martian Mono', serif;
-  --color-gradient-1:#d07741;
-  --color-gradient-2:#062630;
+  --color-gradient-1: #d07741;
+  --color-gradient-2: #062630;
   --inter: 'Inter', serif;
-  --color-salmon-100:#ff9a60 ;
+  --color-salmon-100: #ff9a60;
 }
-button{
+button {
   font-family: inherit;
 }
-body{
-   font-family:var(--inter);
+body {
+  font-family: var(--inter);
 }
 html {
   scroll-behavior: smooth;
 }
 @utility heading {
-  font-family:var(--Martian-Mono);
+  font-family: var(--Martian-Mono);
   @apply text-4xl leading-14 md:text-[3rem] font-bold md:leading-18 bg-clip-text text-transparent bg-gradient-to-r from-gradient-1 to-gradient-2;
 }
-@utility subHeading{
-  font-size:2rem;
-  font-family:var(--Martian-Mono);
+@utility subHeading {
+  font-size: 2rem;
+  font-family: var(--Martian-Mono);
   @apply text-4xl font-semibold leading-14;
 }
-p{
+p {
   @apply leading-8;
 }
 .lightsalmongradient {
   background-image: linear-gradient(
     133deg,
-    #fff5ef 34%,
-    rgba(143, 184, 186, 0.564) 100%
+    #f3d0bb 34%,
+    rgba(154, 233, 237, 0.564) 100%
   );
 }
 .bg {
@@ -66,7 +66,7 @@ p{
 .circle::before {
   content: url('/assets/images/pattern-circle.png');
   position: absolute;
-  width:80px;
+  width: 80px;
   height: 80px;
   top: 0;
   left: -20px;
@@ -81,15 +81,17 @@ p{
   @apply content-[''] md:content-[url('/assets/images/pattern-arrow.svg')];
 }
 
-
-
 button {
-  @apply  outline-[0.05rem] border-[3px] transition-all duration-300;
+  @apply outline-[0.05rem] border-[3px] transition-all duration-300;
 }
-
+.dark:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(3%)
+    hue-rotate(172deg) brightness(105%) contrast(100%);
+}
 button:hover,
-button:focus-visible{
-
+button:focus-visible {
   @apply border-salmon-100 border-[3px]   outline-salmon-100 outline-offset-[.4em] text-white bg-salmon-100;
 }
-
+.icon:hover{
+  filter: brightness(0) saturate(100%) invert(92%) sepia(52%) saturate(5559%) hue-rotate(310deg) brightness(100%) contrast(101%);
+}

@@ -20,13 +20,14 @@ const Footer = () => {
           </p>
           <ul className="flex gap-4">
             <li>
-              <a href="#none">
-                <img src="assets/images/logo-bluesky.svg" />
+              <a href="#none" className=' transition-all duration-300 '>
+                <img src="assets/images/logo-bluesky.svg" className='icon' 
+                />
               </a>
             </li>
             <li>
-              <a href="#none">
-                <img src="assets/images/logo-linkedin.svg" />
+              <a href="#none" className='transition-all duration-300 '>
+                <img src="assets/images/logo-linkedin.svg" className='icon'   />
               </a>
             </li>
           </ul>
